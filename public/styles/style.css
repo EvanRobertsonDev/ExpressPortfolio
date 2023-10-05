@@ -1,0 +1,21 @@
+#border {
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+}
+
+iframe {
+    margin: 30px;
+}
+
+#center {
+    text-align: center;
+}
+
+aside {
+    float: right;
+    padding-left: 30px;
+    margin-left: 30px;
+    width: 30%;
+}

@@ -4,15 +4,38 @@
 
 <main class="container">
   <div class="jumbotron">
-    <h1 class="display-4">Welcome to <%= title %> page</h1>
+    <br>
+    <div class="row align-items-start">
+      <article class="col">
+        <br>
+        <h1 class="display-4">About Me</h1>
+        <p>My name is Evan Robertson and I am a programmer looking to succeed and thrive in the world of game development. 
+          I graduated from Sheridan College in 2021 with a diploma in Computer Programming and am now completeting a program in 
+          Game Programming at Centennial College. You can learn about a bunch of my past and current projects <a href="./projects">here</a>.  
+        </p>
+      </article>
+      <aside class="col">
+        <img id="border" src="img/headshot.jpg" alt="Picture of Evan" width="400px">
+      </aside>
     </div>
-    </main>
+    <br>
+    <hr>
+    <br>
+    <div id="center">
+      <h2>Links</h2>
+      <a href="https://github.com/EvanRobertsonDev" target="_blank">Github</a>
+      <br>
+      <a href="documents/resume.pdf" target="_blank">Resume</a>
+    </div>
+  </div>
+</main>
+
+
+
+
     
-    <!--bottom nav-->
-    
-   
-   
-      <!--script section-->
-      <%- include ('partials/bottom_nav.ejs') %>
-      <%- include ('partials/footer.ejs') %>
+<!--bottom nav-->
+<!--script section-->
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>
    
