@@ -1,22 +1,44 @@
+<!--
+    index.ejs
+    Evan Robertson
+    301291019
+    October 5 2023
+-->
+
+<!--Partials-->
 <%- include ('partials/header.ejs') %>
 <%- include ('partials/main_nav.ejs') %>
    
-
 <main class="container">
     <div class="jumbotron">
         <br>
         <h1 class="display-4">Hi, I'm Evan</h1>
-        <h4>I'm a programmer, web designer, and aspiring game developer.</h4>
+        <h4>I'm a Programmer, Web Designer, and aspiring Game Developer.</h4>
         <br>
-        <br>
-        <br>
+        <!--Linking to all other pages of website-->
         <p>To learn more about myself and my work, head over to the <a href="./about">About Section</a></p>
         <p>To see past and current projects, click the <a href="./projects">Projects Section</a></p>
         <p>To view the services I offer, click the <a href="./services">Services Section</a></p>
         <p>To contact me for questions and inqueries, use the <a href="./contact">Contact Section</a></p>
+        <br>
+        <hr>
+        <!--Split quotations apart for effect-->
+        <h1 class="display-1">
+            "
+        </h1>
+        <h2 class="display-6" id="center">
+            My mission as an aspiring game developer and programmer is to craft immersive and captivating digital experiences that transport players to imaginative worlds, 
+            and evoke deep emotions.
+            <br>
+            Through my personal portfolio, I aim to showcase a diverse range of projects that reflect my passion for 
+            programming and the services I can provide to those looking for assistance in the techincal field. 
+        </h2>
+        <!--Align this one to the right side of the screen-->
+        <h1 class="display-1" id="right">
+            "
+        </h1>
     </div>
 </main>
-
 <!--bottom nav-->
 <%- include ('partials/bottom_nav.ejs') %>
 <!--script section-->

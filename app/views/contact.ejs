@@ -1,19 +1,65 @@
+<!--
+  contact.ejs
+  Evan Robertson
+  301291019
+  October 5 2023
+-->
+
+<!--Partails-->
 <%- include ('partials/header.ejs') %>
 <%- include ('partials/main_nav.ejs') %>
    
 
 <main class="container">
   <div class="jumbotron">
-    <h1 class="display-4">Welcome to <%= title %> page</h1>
-    <p>Contact Us</p>
+    <br>
+    <h1 class="display-4">Contact Me</h1>
+    <p>Want to contact me for inqueries? Fill out the form below and I'll respond as soon as I can!</p>
+    <hr>
+    <!--Opens mail when submitting to email message and returns to home page-->
+    <form action="mailto:evan-robertson@outlook.com" method="post" enctype="text/plain" id="form" onsubmit="returnHome()">
+      <h2 id="center">Contact Form</h2>
+      <div class="mb-3">
+        <!--Make use of more bootstrap classes to build the form-->
+        <label for="InputFirstName" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="InputFirstName" name="First Name" required>
+      </div>
+      <div class="mb-3">
+        <label for="InputLastName" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="InputLastName" name="Last Name" required>
+      </div>
+      <div class="mb-3">
+        <label for="InputPhone" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="InputPhone" required name="Phone Number">
+      </div>
+      <div class="mb-3">
+        <label for="InputEmail" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="InputEmail" name="Email">
+      </div>
+      <div class="mb-3">
+        <label for="InputMessage" class="form-label">Message</label>
+        <textarea class="form-control" id="InputMessage" rows="4" name="Message"></textarea>
+      </div>
+      <div id="sendMsg" class="form-text">Thanks for contacting me - I'll be in touch soon!</div>
+      <br>
+      <button type="submit" class="btn btn-primary" aria-describedby="sendMsg">Send</button>
+    </form>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <div id="center">
+      <h1 class="display-6">
+        Email: Evan-Robertson@outlook.com
+      </h1>
     </div>
-    </main>
-    
-    <!--bottom nav-->
-    
-   
-   
-      <!--script section-->
-      <%- include ('partials/bottom_nav.ejs') %>
-      <%- include ('partials/footer.ejs') %>
+  </div>
+</main>
+
+<!--bottom nav-->
+<%- include ('partials/bottom_nav.ejs') %>
+<!--script section-->
+<%- include ('partials/footer.ejs') %>
+<script src="scripts/script.js"></script>
    

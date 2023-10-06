@@ -1,3 +1,12 @@
+/*
+  style.css
+  Evan Robertson
+  301291019
+  October 5 2023
+*/
+
+
+/* Style for all borders used on website */
 #border {
     border-radius: 20px;
     border-color: black;
@@ -5,21 +14,36 @@
     border-width: 2px;
 }
 
-#carousel {
+/* Style for caroursels (slideshows) used on the website*/
+#carousel, #carousel2 {
     border-color: black;
     border-style: solid;
     border-width: 5px;
     margin-bottom: 10px;
 }
 
-iframe {
-    margin: 30px;
+/* Style to align the forms on the website */
+#form {
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
+/* Style to center content */
 #center {
     text-align: center;
 }
 
+/* Style to align content right */
+#right {
+    text-align: right;
+}
+
+/* Style for video player on the website */
+iframe {
+    margin: 30px;
+}
+
+/* Style for side text/images on the website */
 aside {
     float: right;
     padding-left: 30px;
@@ -27,6 +51,7 @@ aside {
     width: 30%;
 }
 
+/* Style to prevent the bottom navbar from blocking content*/
 main {
     margin-bottom:5%;
 }
